@@ -8,8 +8,17 @@ namespace IndianStateCensusAnalyzerTest
     {
         public string stateCensusDataFilePath = @"D:\gittestrep\IndianStateCensusAnalyzer\IndianCensusAnalyzer\Files\StateCensusData.csv";
         public string stateCensusDataNoFilePath = @"D:\gittestrep\IndianStateCensusAnalyzer\IndianStateCensusAnalyzer\Files\StateCensus.csv";
+        public string stateCensusDataIncorrectFilePath = @"D:\gittestrep\IndianStateCensusAnalyzer\IndianCensusAnalyzer\Files\StateCensusData.txt";
         public string stateCensusDataHeaderFilePath = @"D:\gittestrep\IndianStateCensusAnalyzer\IndianCensusAnalyzer\Files\StateCensusDataHeader.csv";
         public string stateCensusDataDelimiterFilePath = @"D:\gittestrep\IndianStateCensusAnalyzer\IndianCensusAnalyzer\Files\StateCensusDataDelimiter.csv";
+
+        public string stateCodeFilePath = @"D:\gittestrep\IndianStateCensusAnalyzer\IndianCensusAnalyzer\Files\StateCode.csv";
+        public string stateCodeIncorrectFilePath = @"D:\gittestrep\IndianStateCensusAnalyzer\IndianCensusAnalyzer\Files\Statecode.txt";
+        public string stateCodeNoFilePath = @"D:\gittestrep\IndianStateCensusAnalyzer\IndianStateCensusAnalyzer\Files\StateCodeData.csv";
+        public string stateCodeHeaderFilePath = @"D:\gittestrep\IndianStateCensusAnalyzer\IndianCensusAnalyzer\Files\StateCodeHeader.csv";
+        public string stateCodeDelimiterFilePath = @"D:\gittestrep\IndianStateCensusAnalyzer\IndianCensusAnalyzer\Files\StateCodeDelimniter.csv";
+
+
         [Test]
         public void GivenStateCensusData_WhenAnalysed_RecordsShouldBeMatched()
         {
