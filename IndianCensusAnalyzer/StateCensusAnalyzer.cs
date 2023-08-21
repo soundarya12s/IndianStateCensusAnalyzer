@@ -18,6 +18,11 @@ namespace IndianStateCensusAnalyzer
                 throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.FILE_INCORRECT,
                     "File extension incorrect");
             }
+            if (File.ReadAllLines(filepath)[0].Contains("/") || File.ReadAllLines(filepath)[0].Contains("|"))
+            {
+                throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.DELIMITER_INCORRECT,
+                    "Delimiter incorrect");
+            }
             if (!File.ReadAllLines(filepath)[0].Equals("State,Population,AreaInSqKm,DensityPerSqKm"))
             {
                 throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.HEADER_INCORRECT,
